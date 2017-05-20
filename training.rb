@@ -16,5 +16,23 @@ def isTriangle(a, b, c)
     return false
 end
 
-puts isTriangle(1, 2, 2)
-puts isTriangle(7, 2, 2)
+def consecutive_case_reverse(n)
+    # reverses the case of consecutive characters
+    input = n.split('')
+    answer = Array.new
+    counter = 0
+
+    while counter < input.length
+        if (input[counter] == input[counter-1]) || (input[counter] == input[counter+1])
+            answer.push(input[counter].swapcase)
+        else
+            answer.push(input[counter])
+        end
+        counter += 1
+    end
+    return answer.join
+end
+
+# puts isTriangle(1, 2, 2)
+# puts isTriangle(7, 2, 2)
+puts consecutive_case_reverse("WWWeW")
