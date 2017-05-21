@@ -35,4 +35,3 @@ end
 
 # puts isTriangle(1, 2, 2)
 # puts isTriangle(7, 2, 2)
-puts consecutive_case_reverse("WWWeW")
