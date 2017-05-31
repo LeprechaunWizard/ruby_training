@@ -16,7 +16,16 @@ describe "training" do
             expect(consecutive_case_reverse "WWWeW").to eq 'wwweW'
         end
         it "reverses 'Hello World'" do
-            expect(consecutive_case_reverse "HeLLo World").to eq'Hello WorLd'
+            expect(consecutive_case_reverse "HeLLo World").to eq'Hello World'
+        end
+    end
+
+    describe "Sum of Positives |" do
+        it "handles empty array" do
+            expect(sum_of_positives []).to eq(0)
+        end
+        it "adds the array" do
+            expect(sum_of_positives [3, -4, 5, 2]).to eq(10)
         end
     end
 end

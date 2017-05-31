@@ -33,5 +33,12 @@ def consecutive_case_reverse(n)
     return answer.join
 end
 
-# puts isTriangle(1, 2, 2)
-# puts isTriangle(7, 2, 2)
+def sum_of_positives(array)
+    sum = 0
+    for number in array
+        if number >=0
+            sum += number
+        end
+    end
+    return sum
+end
