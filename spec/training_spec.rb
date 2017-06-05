@@ -28,4 +28,10 @@ describe "training" do
             expect(sum_of_positives [3, -4, 5, 2]).to eq(10)
         end
     end
+
+    describe "Filter List |" do
+        it "takes Strings out of list" do
+            expect(filter_list ["4", 45, 69, "hello"]).to eq([45, 69])
+        end
+    end
 end

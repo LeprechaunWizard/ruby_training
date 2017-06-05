@@ -42,3 +42,15 @@ def sum_of_positives(array)
     end
     return sum
 end
+
+def filter_list(list)
+    # Filters out strings from list
+    filteredArray = Array.new
+
+    list.each do |element|
+        if element.is_a? Integer
+            filteredArray.push(element)
+        end
+    end
+    return filteredArray
+end
